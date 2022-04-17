@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Reto Finaktiva</title>
+  </head>
+  <body>
+    <form action="#">
+      <h1>RETO FINAKTIVA</h1>
+      <br /><br />
+      <label>Ingrese el numero a agregar:</label>
+      <br /><br />
+      <input type="number" class="" id="input" />
+      <br /><br />
+      <button onclick="add()"><b>Agregar</b></button>
+      <br /><br />
+      <select name="select" id="select" onchange="operation()">
+        <option value="ZA">Ordenar de mayor a menor</option>
+        <option value="AZ">Ordenar de menor a mayor</option>
+        <option value="SumarTodo">Sumar todos</option>
+        <option value="ElevadoADos">
+          Multiplicar cada número por sí mismo
+        </option>
+      </select>
+      <br /><br />
+      <label>Los números agregados son:</label>
+      <br /><br />
+      <ul id="list"></ul>
+    </form>
+    <script type="text/javascript" src="operations.js"></script>
+  </body>
+</html>
